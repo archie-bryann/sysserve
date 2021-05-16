@@ -1,0 +1,121 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display:flex;
+    align-items: center;
+    padding:20px;
+}
+
+nav {
+    flex:1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+.link {
+    text-decoration: none;
+    color: #555;
+}
+
+
+.c {
+    color:white;
+}
+
+.cart-icon:hover {
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.search-icon {
+    margin-right: 18px;
+}
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        /* background: #7fad39; */
+        width: 100%;
+        overflow: scroll;
+        z-index: 999999;
+        transition: max-height 0.5;
+        /* visibility:hidden; */
+        -webkit-transition: all 0.4s ease-in-out 0.10s;
+        -moz-transition: all 0.4s ease-in-out 0.10s;
+        -o-transition: all 0.4s ease-in-out 0.10s;
+        -ms-transition: all 0.4s ease-in-out 0.10s;
+        transition: all 0.4s ease-in-out 0.10s;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li .link {
+        color: #fff;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+    }
+}
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+    background-color: #c67605;
+}
+
+#lblCartCount {
+    font-size: 10px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px;
+}
